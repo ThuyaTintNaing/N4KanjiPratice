@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="745.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_project.main_controller">
+   <top>
+      <AnchorPane prefHeight="72.0" prefWidth="683.0" style="-fx-background-color: #D3D3D3;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="551.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lesson">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text layoutX="57.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N4 Kanji Practise">
+               <font>
+                  <Font name="Arial Bold Italic" size="26.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="33.0" fitWidth="34.0" layoutX="21.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8_japan_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.0" fitWidth="42.0" layoutX="196.0" layoutY="10.0" opacity="0.14" pickOnBounds="true" preserveRatio="true" rotate="-7.1">
+               <image>
+                  <Image url="@images/icons8_hiragana_ma_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="44.0" layoutX="373.0" layoutY="4.0" opacity="0.18" pickOnBounds="true" preserveRatio="true" rotate="16.7">
+               <image>
+                  <Image url="@images/icons8_shinto_shrine_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="44.0" layoutX="520.0" layoutY="2.0" opacity="0.18" pickOnBounds="true" preserveRatio="true" rotate="-13.4">
+               <image>
+                  <Image url="@images/icons8_mount_fuji_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="44.0" layoutX="690.0" layoutY="2.0" opacity="0.18" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8_noodles_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="51.0" fitWidth="56.0" layoutX="119.0" layoutY="24.0" opacity="0.18" pickOnBounds="true" preserveRatio="true" rotate="5.2">
+               <image>
+                  <Image url="@images/icons8_hand_fan_100px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="44.0" layoutX="289.0" layoutY="21.0" opacity="0.18" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8_noodles_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="44.0" layoutX="57.0" layoutY="-16.0" opacity="0.18" pickOnBounds="true" preserveRatio="true" rotate="-10.3">
+               <image>
+                  <Image url="@images/icons8_mount_fuji_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="49.0" layoutX="437.0" layoutY="27.0" opacity="0.18" pickOnBounds="true" preserveRatio="true" rotate="11.3">
+               <image>
+                  <Image url="@images/icons8_hand_fan_100px.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="35.0" fitWidth="41.0" layoutX="607.0" layoutY="33.0" opacity="0.14" pickOnBounds="true" preserveRatio="true" rotate="7.1">
+               <image>
+                  <Image url="@images/icons8_hiragana_ma_48px.png" />
+               </image>
+            </ImageView>
+            <JFXComboBox fx:id="combo1" focusColor="#3f3e3e" layoutX="625.0" layoutY="25.0" onAction="#actionlessonselect" prefHeight="25.0" prefWidth="74.0" promptText="choose" unFocusColor="#3f3e3e" visibleRowCount="6" />
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="260.0" prefWidth="407.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="4.0" layoutY="14.0" prefHeight="350.0" prefWidth="411.0">
+               <children>
+                  <Text fill="#5e5e5e" layoutX="14.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=" wrappingWidth="64.30615234375">
+                     <font>
+                        <Font size="75.0" />
+                     </font>
+                  </Text>
+                  <JFXButton fx:id="buttonkana" layoutX="89.0" layoutY="18.0" onAction="#actionkana" prefHeight="155.0" prefWidth="315.0" style="-fx-background-color: #D2B4DE;" text="Hiragana" wrapText="true">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="buttmeaing" layoutX="89.0" layoutY="192.0" onAction="#actionmeaning" prefHeight="155.0" prefWidth="315.0" style="-fx-background-color: #D2B4DE;" text="Meaning" wrapText="true">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="74.0" prefWidth="734.0" style="-fx-background-color: #D3D3D3;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="14.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total kanji -">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="totalnum" layoutX="105.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="23.171875">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="41.0" fitWidth="44.0" layoutX="46.0" layoutY="33.0" opacity="0.18" pickOnBounds="true" preserveRatio="true" rotate="12.5">
+               <image>
+                  <Image url="@images/icons8_noodles_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="51.0" fitWidth="56.0" layoutX="103.0" layoutY="-7.0" opacity="0.18" pickOnBounds="true" preserveRatio="true" rotate="-45.0">
+               <image>
+                  <Image url="@images/icons8_hand_fan_100px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="44.0" layoutX="315.0" layoutY="26.0" opacity="0.18" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8_noodles_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="44.0" layoutX="252.0" layoutY="-2.0" opacity="0.18" pickOnBounds="true" preserveRatio="true" rotate="-12.5">
+               <image>
+                  <Image url="@images/icons8_shinto_shrine_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.0" fitWidth="42.0" layoutX="177.0" layoutY="25.0" opacity="0.14" pickOnBounds="true" preserveRatio="true" rotate="15.9">
+               <image>
+                  <Image url="@images/icons8_hiragana_ma_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="41.0" fitWidth="44.0" layoutX="392.0" layoutY="5.0" opacity="0.18" pickOnBounds="true" preserveRatio="true" rotate="8.1">
+               <image>
+                  <Image url="@images/icons8_mount_fuji_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="41.0" fitWidth="44.0" layoutX="613.0" layoutY="-6.0" opacity="0.18" pickOnBounds="true" preserveRatio="true" rotate="-15.9">
+               <image>
+                  <Image url="@images/icons8_shinto_shrine_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="47.0" fitWidth="42.0" layoutX="469.0" layoutY="32.0" opacity="0.14" pickOnBounds="true" preserveRatio="true" rotate="21.8">
+               <image>
+                  <Image url="@images/icons8_hiragana_ma_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="49.0" fitWidth="37.0" layoutX="708.0" layoutY="-2.0" opacity="0.18" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8_hand_fan_100px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="44.0" layoutX="554.0" layoutY="32.0" opacity="0.18" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8_noodles_48px.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="ranbutt" layoutX="415.0" layoutY="10.0" onAction="#randomaction" prefHeight="55.0" prefWidth="150.0" style="-fx-background-radius: 15; -fx-background-color: #a8c66c;" text="Next Kanji">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="buttreset" layoutX="588.0" layoutY="10.0" onAction="#actionReset" prefHeight="55.0" prefWidth="142.0" style="-fx-background-radius: 15; -fx-background-color: #a8c66c;" text="Reset">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXButton>
+            <ImageView disable="true" fitHeight="19.0" fitWidth="21.0" layoutX="682.0" layoutY="28.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8_reset_50px_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="44.0" layoutX="-6.0" layoutY="-6.0" opacity="0.18" pickOnBounds="true" preserveRatio="true" rotate="-26.6">
+               <image>
+                  <Image url="@images/icons8_mount_fuji_48px.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </bottom>
+   <left>
+      <StackPane prefHeight="260.0" prefWidth="319.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="buttkenji" prefHeight="333.0" prefWidth="303.0" style="-fx-background-color: #79a7d3;" text="Kanji" wrapText="true">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </StackPane>
+   </left>
+</BorderPane>
